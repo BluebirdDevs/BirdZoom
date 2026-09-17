@@ -3,27 +3,28 @@
 	"id": "birdzoom",
 	"version": "${version}",
 	"name": "BirdZoom",
-	"description": "A Simple Zoom mod",
+	"description": "A simple zoom mod that fixes common issues found in others",
 	"authors": [
 		"BluebirdDevs"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/FQUBFXkG",
+		"sources": "https://github.com/BluebirdDevs/BirdZoom",
+		"issues": "https://github.com/BluebirdDevs/BirdZoom"
 	},
-	"license": "AAR",
+	"license": "ARR",
 	"icon": "assets/birdzoom/birdzoom.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"bluebird.BirdZoom"
+			"bluebird.birdzoom.BirdZoom"
 		]
 	},
 	"mixins": [
 		"birdzoom.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=${loader_version}",
+		"fabricloader": "*",
 		"fabric-api": "*",
 		"minecraft": "${version_range}"
 	}

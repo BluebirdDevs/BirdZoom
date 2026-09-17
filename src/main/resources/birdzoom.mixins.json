@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "bluebird.mixin",
+  "package": "bluebird.birdzoom.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
   ],
@@ -13,6 +13,7 @@
   "client": [
     "CameraMixin",
     "DebugCrosshairRendererMixin",
+    "LevelExtractorMixin",
     "MouseHandlerMixin"
   ]
 }
