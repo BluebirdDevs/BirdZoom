@@ -12,9 +12,8 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "AAR",
-	"icon": "assets/birdzoom/icon.png",
+	"icon": "assets/birdzoom/birdzoom.png",
 	"environment": "*",
-	"accessWidener": "birdzoom.accesswidener",
 	"entrypoints": {
 		"main": [
 			"bluebird.BirdZoom"

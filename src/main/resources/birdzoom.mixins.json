@@ -13,7 +13,6 @@
   "client": [
     "CameraMixin",
     "DebugCrosshairRendererMixin",
-    "HandMixin",
-    "MouseMixin"
+    "MouseHandlerMixin"
   ]
 }
