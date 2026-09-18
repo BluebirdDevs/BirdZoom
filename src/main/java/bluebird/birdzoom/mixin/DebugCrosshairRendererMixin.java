@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(DebugScreenOverlay.class)
 public class DebugCrosshairRendererMixin {
-    @ModifyVariable(method = "render3dCrosshair", at = @At(value = "STORE"), index = 4)
+    @ModifyVariable(method = "render3dCrosshair", at = @At(value = "STORE"), index = 3)
     public float birdzoom$changeDebugCrosshair(float crosshairScale) {
         if (BirdZoom.isZoomed()) return crosshairScale * (float) BirdZoom.getMultiplier();
         return crosshairScale;

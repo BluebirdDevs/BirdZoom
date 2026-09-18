@@ -11,8 +11,8 @@
     "requireAnnotations": true
   },
   "client": [
-    "CameraMixin",
     "DebugCrosshairRendererMixin",
+    "GameRendererMixin",
     "LevelExtractorMixin",
     "MouseHandlerMixin"
   ]

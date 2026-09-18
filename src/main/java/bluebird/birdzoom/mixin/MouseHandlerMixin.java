@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 @Mixin(MouseHandler.class)
 public class MouseHandlerMixin {
     @Inject(method = "onScroll", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/player/LocalPlayer;isSpectator()Z"), cancellable = true)
-    private static void birdZoom$onScroll(CallbackInfo ci, @Local(name = "wheel") int wheel) {
+    private static void birdZoom$onScroll(CallbackInfo ci, @Local(ordinal = 0) int wheel) {
         if (BirdZoom.isZoomed()) {
             BirdZoom.handleScroll(wheel);
             ci.cancel();
