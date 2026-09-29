@@ -1,0 +1,14 @@
+*               text=auto eol=lf
+
+/gradlew        text eol=lf
+
+*.bat           text eol=crlf
+
+*.png           binary
+*.jpg           binary
+*.ogg           binary
+*.mp3           binary
+*.mp4           binary
+
+build-logic/** text eol=lf linguist-detectable=false
+scripts/** text eol=lf linguist-detectable=false

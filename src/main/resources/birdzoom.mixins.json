@@ -1,0 +1,18 @@
+{
+  "package": "bluebird.birdzoom.mixin",
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "${java}",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ],
+  "client": [
+    "CameraMixin",
+    "DebugCrosshairRendererMixin",
+    "LevelExtractorMixin",
+    "MouseHandlerMixin",
+    "old.GameRendererMixin"
+  ]
+}
