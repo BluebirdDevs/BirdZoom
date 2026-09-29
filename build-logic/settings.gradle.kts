@@ -1,4 +1,4 @@
-rootProject.name = "BirdZoomin"
+rootProject.name = "BirdZoom"
 
 dependencyResolutionManagement {
     versionCatalogs {
