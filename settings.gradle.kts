@@ -35,25 +35,40 @@ stonecutter {
 			}
 		}
 
-		match("26.3", "fabric", "forge", "neoforge")
-		match("26.2", "fabric", "forge", "neoforge")
-//		match("26.1", "fabric", "forge", "neoforge")
-//
-//		match("1.21.11", "fabric", "forge", "neoforge")
-//		match("1.21.9", "fabric", "forge", "neoforge")
-//		match("1.21.6", "fabric", "forge", "neoforge")
-//		match("1.21.5", "fabric", "forge", "neoforge")
-//		match("1.21.4", "fabric", "forge", "neoforge")
-//		match("1.21.2", "fabric", "forge", "neoforge")
-//		match("1.21", "fabric", "forge", "neoforge")
-//
-//		match("1.20.5", "fabric", "forge", "neoforge")
-//		match("1.20.3", "fabric", "neoforge")
-//		match("1.20.2", "fabric")
-//		match("1.20", "fabric", "forge")
-//
-//		match("1.19", "fabric", "forge")
+		val active_ver = "1.21.11-fabric"
+		val dev = false
+		val reduced = false
 
-		vcsVersion = "26.3-fabric"
+		if (dev) {
+			val version = active_ver.split("-")[0]
+			val loader = active_ver.split("-")[1]
+
+			match(version, loader)
+			vcsVersion = active_ver
+		} else if (reduced) {
+			match("26.3", "fabric", "forge", "neoforge")
+			vcsVersion = "26.3-fabric"
+		} else {
+			match("26.3", "fabric", "forge", "neoforge")
+//			match("26.2", "fabric", "forge", "neoforge")
+//			match("26.1", "fabric", "forge", "neoforge")
+//
+//			match("1.21.11", "fabric", "forge", "neoforge")
+//			match("1.21.9", "fabric", "forge", "neoforge")
+//			match("1.21.6", "fabric", "forge", "neoforge")
+//			match("1.21.5", "fabric", "forge", "neoforge")
+//			match("1.21.4", "fabric", "forge", "neoforge")
+//			match("1.21.2", "fabric", "forge", "neoforge")
+//			match("1.21", "fabric", "forge", "neoforge")
+//
+//			match("1.20.5", "fabric", "forge", "neoforge")
+//			match("1.20.3", "fabric", "neoforge")
+//			match("1.20.2", "fabric")
+			match("1.20", "fabric", "forge")
+
+//			match("1.19", "fabric", "forge")
+
+			vcsVersion = "26.3-fabric"
+		}
 	}
 }

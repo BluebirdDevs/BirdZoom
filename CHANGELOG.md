@@ -1,2 +1,1 @@
-- Forge/Neoforge + all major versions port
-- Fixed chunks not loading when zooming after moving your mouse
+- Fix imcompatablity with sodium / embeddium on versions before 26.2
